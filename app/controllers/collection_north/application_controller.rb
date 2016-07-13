@@ -1,4 +1,2 @@
-module CollectionNorth
-  class ApplicationController < ActionController::Base
-  end
+class CollectionNorth::ApplicationController < ActionController::Base
 end

@@ -15,29 +15,30 @@ gemspec
 
 gem 'rubocop'
 
+gem 'sqlite3'
+
 group :test do
-  gem "rspec-its"
-  gem "ci_reporter_rspec"
-  gem "timecop"
+  gem 'rspec-its'
+  gem 'ci_reporter_rspec'
+  gem 'timecop'
 end
 
 group :development, :test do
   gem 'fcrepo_wrapper'
-  gem "byebug"
-  gem "rspec-rails"
-  gem "ruby-debug-passenger"
-  gem "selenium-webdriver"
-  gem "jettywrapper"
-  gem "capybara"
-  gem "poltergeist", "~> 1.5"
-  gem "factory_girl_rails"
-  gem "database_cleaner"
-  gem "capybara-select2"
-  gem "show_me_the_cookies"
-  gem "brakeman"
-  gem "better_errors"
-  gem "binding_of_caller"
+  gem 'byebug'
+  gem 'rspec-rails'
+  gem 'ruby-debug-passenger'
+  gem 'selenium-webdriver'
+  gem 'jettywrapper'
+  gem 'capybara'
+  gem 'poltergeist', '~> 1.5'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
+  gem 'capybara-select2'
+  gem 'show_me_the_cookies'
+  gem 'brakeman'
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'ruby-prof'
   gem 'rest-client'
 end
-

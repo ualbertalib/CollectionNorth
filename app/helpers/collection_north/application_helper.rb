@@ -1,4 +1,2 @@
-module CollectionNorth
-  module ApplicationHelper
-  end
+module CollectionNorth::ApplicationHelper
 end

@@ -19,7 +19,7 @@ load 'rails/tasks/engine.rake'
 
 load 'rails/tasks/statistics.rake'
 
-Bundler::GemHelper.install_tasks
+require 'bundler/gem_tasks'
 
 require 'rake/testtask'
 

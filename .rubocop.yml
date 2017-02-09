@@ -9,6 +9,9 @@ AllCops:
     - 'vendor/**/*'
     - 'db/**/*'
     - 'tmp/**/*'
+    - 'spec/dummy/vendor/**/*'
+    - 'spec/dummy/db/**/*'
+    - 'spec/dummy/tmp/**/*'
   ExtraDetails: true
   TargetRubyVersion: 2.2
 

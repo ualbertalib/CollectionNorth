@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Rails 5
+gem 'rails', '~> 5.0.1'
+
 # Declare your gem's dependencies in collection_north.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.

@@ -1,25 +1,18 @@
 # CollectionNorth
-Short description and motivation.
+CollectionNorth is a Rails engine that provides Collections and Communities functionality to [Hydra applications](http://projecthydra.org/)
 
-## Usage
-How to use my plugin.
+## Features (TODO)
+* CRUD any collections
+* CRUD any Communities
 
 ## Installation
-Add this line to your application's Gemfile:
+1. Add this line to your application's Gemfile:
 
 ```ruby
 gem 'collection_north'
 ```
-
-And then execute:
-```bash
-$ bundle
-```
-
-Or install it yourself as:
-```bash
-$ gem install collection_north
-```
+2. Run `bundle install`
+3. Run `rails g collection_north:install`
 
 ## Contributing
 Contribution directions go here.

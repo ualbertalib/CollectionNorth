@@ -1,4 +1,6 @@
 # CollectionNorth
+[![Build Status](https://travis-ci.org/ualbertalib/CollectionNorth.svg?branch=master)](https://travis-ci.org/ualbertalib/CollectionNorth)
+
 CollectionNorth is a Rails engine that provides Collections and Communities functionality to [Hydra applications](http://projecthydra.org/)
 
 ## Features (TODO)

@@ -10,19 +10,22 @@ class CollectionNorth::Collection < ActiveFedora::Base
   end
 
   property :community_id, predicate: MyTerms.foo, multiple: false do |index|
-    # TODO change this, we don't need paths here per
+    # TODO can we change this, as we don't need paths here, just the id, OR
+    # should it be kept for symmetry of faceting?
     index.as :descendent_path
   end
 
   def path
-    "#{community}/#{id}"
+    "#{community_id}/#{id}"
   end
 
   # Add members using the members association.
+  # Semantically, in Esme's original reversal patch, this added item IDs to the collection, whereas
+  # add_member_objects added collection ids to the item. Since we always want the latter behaviour, and
+  # never want callers attempting to achieve the former, this is left in place to catch anything trying
+  # to do things the "bad" way
   def add_members(new_member_ids)
     raise "Don't use add_members. It's a bad idea and a performance nightmare"
-    # return if new_member_ids.nil? || new_member_ids.empty?
-    # members << ActiveFedora::Base.find(new_member_ids)
   end
 
   # Add member objects by adding this collection to the objects' member_of_collection association.
